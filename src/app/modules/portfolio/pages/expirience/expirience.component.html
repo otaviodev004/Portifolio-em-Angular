@@ -1,0 +1,21 @@
+<main>
+    <app-fundo/>
+    <div class="container">
+        <div class="text-apresentation">
+            @for(item of arraySkills(); track item;){
+                <details>
+                    <summary>
+                        <p>
+                            <strong>
+                                {{ item.summary.strong }}
+                            </strong>
+                            {{ item.summary.p }}
+                        </p>
+                    </summary>
+                    <article [innerHTML]="item.text"></article>
+                </details>
+            }
+        </div>
+        <app-grip-buttons/>
+    </div>
+</main>

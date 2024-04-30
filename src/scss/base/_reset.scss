@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "JetBrains Mono", monospace;
+    background: var(--black);
+}
+
+h1 {
+    font-size: 107px;
+    font-weight: 300;
+    color: var(--white);
+    text-decoration: none;
+}
+
+h1, h2, h3, a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+p {
+    color: var(--white);
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+p span{
+    color: var(--primary-010);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    position: relative;
+    /* width: 100%; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 150px;
+}
