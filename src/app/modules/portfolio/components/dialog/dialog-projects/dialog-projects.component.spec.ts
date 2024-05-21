@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { GripButtonsComponent } from './grip-buttons.component';
 
-describe('GripButtonsComponent', () => {
-  let component: GripButtonsComponent;
-  let fixture: ComponentFixture<GripButtonsComponent>;
+import { DialogProjectsComponent } from './dialog-projects.component';
+
+describe('DialogProjectsComponent', () => {
+  let component: DialogProjectsComponent;
+  let fixture: ComponentFixture<DialogProjectsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GripButtonsComponent]
+      imports: [DialogProjectsComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(GripButtonsComponent);
+    fixture = TestBed.createComponent(DialogProjectsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -3,18 +3,18 @@
     <div class="container">
         <div class="form-contact">
             <form action="" method="">
-                <input id="name" type="text" placeholder="Name">
-                <input type="email" id="email" placeholder="Email"> 
-                <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <input id="name" type="text" placeholder="Name" autocomplete="off" maxlength="100">
+                <input type="mail" id="email" placeholder="Email" autocomplete="off" maxlength="200"> 
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Message" autocomplete="off" maxlength="1000"></textarea>
                 <div class="btn-send">
                     <button>Send</button>
                 </div>
             </form>
             <div class="icons">
-                <a href=""><button><img src="assets/img/icons/mail.png" alt="Email image icon"></button></a>
-                <a href=""><button><img src="assets/img/icons/linkedin.png" alt="linkedin image icon"></button></a>
-                <a href=""><button><img src="assets/img/icons/icons8-twitter-50.png" alt="twitter image icon"></button></a>
-                <a href=""><button><img src="assets/img/icons/instagram.png" alt="instagram image icon"></button></a>
+                <a href="mailto:otavio.augusto.magalhaes@gmail.com" target="_blank"><button><img src="assets/img/icons/mail.png" alt="Email image icon"></button></a>
+                <a href="https://www.linkedin.com/in/otavioapmagalhaes" target="_blank"><button><img src="assets/img/icons/linkedin.png" alt="linkedin image icon"></button></a>
+                <a href="https://github.com/otaviodev004" target="_blank"><button><img src="assets/img/icons/git.png" alt="twitter image icon"></button></a>
+                <a href="https://www.instagram.com/tavao_04/" target="_blank"><button><img src="assets/img/icons/instagram.png" alt="instagram image icon"></button></a>
             </div>
         </div>
         <app-grip-buttons/>

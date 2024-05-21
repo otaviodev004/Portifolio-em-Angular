@@ -1,7 +1,28 @@
-.container .text-inicio-apresentation p{
-    width: 508px;
-    font-family: Roboto, "Jura", monospace;
-    font-weight: 100;
-    font-size: 30px;
-    text-align: justify;
+:host {
+    .container .text-inicio-apresentation p{
+        width: 508px;
+        font-family: Roboto, "Jura", monospace;
+        font-weight: 100;
+        font-size: 30px;
+        text-align: justify;
+    }
+    
+    
+    .text-inicio-apresentation {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 }

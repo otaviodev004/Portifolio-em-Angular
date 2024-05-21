@@ -1,33 +1,89 @@
 :host {
-
-    details {
-        width: 508px;
-        overflow: hidden;
-        margin-top: 10px;
-        background: var(--black-010);
-        border-radius: 7px;
-
-        summary, article {
-            padding: 10px 20px;
-            transition: .10s;
-        }
-
-        summary {
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--primary);
-
-            .text-apresentation p {
-                font-size: 14px;
-                color: var(--black);
-                padding: 0;
-                margin: 0;
-                display: flex;
-                flex-direction: column;
-            }
-        }
+    .container .text-apresentation {
+        // width: 508px;
+        position: absolute;
+        margin-right: 570px;
     }
 
+    .container .position {
+        width: 508px;
+    }
+
+
+    .text-apresentation{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        z-index: 1;
+    }
+
+    .text-apresentation .card {
+        width: 280px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-top: 1px solid var(--primary);
+        border-left: 1px solid var(--primary);
+        border-radius: 15px;
+        // margin: 30px;
+        margin: 15px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        background: rgb(41 41 41 / 15%);
+        overflow: hidden;
+    }
+
+    .text-apresentation .card .content {
+        padding: 20px;
+        text-align: center;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .text-apresentation .card:hover .content{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    .text-apresentation .card .content h2{
+        position: absolute;
+        top: -79px;
+        right: 20px;
+        font-size: 90px;
+        color: rgba(255, 255, 255, 0.05);
+        pointer-events: none;
+    }
+
+    .text-apresentation .card .content h3{
+        font-size: 30px;
+        color: var(--white);
+        font-family: Roboto, "Jura", monospace;
+        font-weight: 500;
+        z-index: 1;
+    }
+
+    .text-apresentation .card .content p{
+        font-size: 1em;
+        color: var(--white);
+        font-weight: 300;
+        text-align: left;
+    }
+
+    .text-apresentation .card .content a{
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        margin-top: 15px;
+        background-color: var(--white);
+        color: var(--black);
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: 500;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
 }

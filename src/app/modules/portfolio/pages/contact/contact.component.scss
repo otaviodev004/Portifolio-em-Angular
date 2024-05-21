@@ -16,8 +16,22 @@
     .form-contact input{
         height: 50px;
         border: 2px solid var(--primary);
-        background-color: var(--black);
+        background: none;
         color: var(--white);
+        outline: 0;
+    }
+
+    .form-contact input[type="text"] {
+        padding-left: 10px;
+    }
+    
+    .form-contact input[type="mail"] {
+        padding-left: 10px;
+    }
+
+    .form-contact textarea{
+        padding-left: 10px;
+        padding-top: 10px;
     }
 
     .form-contact input#email{
@@ -26,9 +40,10 @@
 
     .form-contact textarea{
         margin-top: 5px;
-        background-color: var(--black);
+        background: none;
         border: 2px solid var(--primary);
         color: var(--white);
+        outline: 0;
     }
 
     .form-contact .btn-send{
@@ -65,14 +80,20 @@
     }
 
     .form-contact .icons button{
-        width: 88px;
-        height: 44px;
-        background-color: var(--black);
+        width: 60px;
+        height: 60px;
+        background: none;
         border: 2px solid var(--primary);
+        border-radius: 50%;
         cursor: pointer;
+        transition: .5s;
+    }
+
+    .form-contact .icons button:hover{
+        background-color: var(--primary-010);
     }
 
     .form-contact .icons img {
-        width: 34%;
+        width: 60%;
     }
 }

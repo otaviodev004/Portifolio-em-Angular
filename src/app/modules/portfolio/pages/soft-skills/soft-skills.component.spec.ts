@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { GripButtonsComponent } from './grip-buttons.component';
 
-describe('GripButtonsComponent', () => {
-  let component: GripButtonsComponent;
-  let fixture: ComponentFixture<GripButtonsComponent>;
+import { SoftSkillsComponent } from './soft-skills.component';
+
+describe('SoftSkillsComponent', () => {
+  let component: SoftSkillsComponent;
+  let fixture: ComponentFixture<SoftSkillsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GripButtonsComponent]
+      imports: [SoftSkillsComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(GripButtonsComponent);
+    fixture = TestBed.createComponent(SoftSkillsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

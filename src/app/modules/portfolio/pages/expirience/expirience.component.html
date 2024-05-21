@@ -1,21 +1,44 @@
 <main>
-    <app-fundo/>
+    <app-fundo />
     <div class="container">
         <div class="text-apresentation">
-            @for(item of arraySkills(); track item;){
-                <details>
-                    <summary>
-                        <p>
-                            <strong>
-                                {{ item.summary.strong }}
-                            </strong>
-                            {{ item.summary.p }}
-                        </p>
-                    </summary>
-                    <article [innerHTML]="item.text"></article>
-                </details>
-            }
+            <div class="card" #card>
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Suporte Técnico</h3>
+                    <p>
+                       Quando ainda está terminando meu Ensino Médio Técnico no Colégio COTEMIG, tive a minha primeira oportunidade
+                       como Suporte Técnico na CNI - Centro de Formação Profissional, onde pude aprimorar muito os meus conhecimentos
+                       na área de Infraestrutura, Redes, entre outras...
+                    </p>
+                    <a href="#">Mais Informações!</a>
+                </div>
+            </div>
+            <div class="card" #card>
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Desenvolvedor</h3>
+                    <p>
+                        Logo após terminar o Ensino Médio, comecei como Desenvolvedor Web na empresa FAC Sistemas, foi uma a minha primeira
+                        oportunidade na área de Desenvolvedor o que me agradou muito ...
+                    </p>
+                    <a href="#">Mais Informações!</a>
+                </div>
+            </div>
+            <div class="card" #card>
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Desenvolvedor</h3>
+                    <p>
+                        Atualmente iniciei minha jornada na BRUNSKER Tecnologia, aqui estou atuando como Desenvolvedor Web ...
+                    </p>
+                    @for(item of arrayProjects(); track item){
+                        <a (click)="openDialog(item)">Mais Informações!</a>
+                    }
+                </div>
+            </div>
         </div>
-        <app-grip-buttons/>
+        <div class="position"></div>
+        <app-grip-buttons />
     </div>
 </main>

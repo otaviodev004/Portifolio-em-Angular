@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { GripButtonsComponent } from './grip-buttons.component';
 
-describe('GripButtonsComponent', () => {
-  let component: GripButtonsComponent;
-  let fixture: ComponentFixture<GripButtonsComponent>;
+import { AnimationComponent } from './animation.component';
+
+describe('AnimationComponent', () => {
+  let component: AnimationComponent;
+  let fixture: ComponentFixture<AnimationComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GripButtonsComponent]
+      imports: [AnimationComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(GripButtonsComponent);
+    fixture = TestBed.createComponent(AnimationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

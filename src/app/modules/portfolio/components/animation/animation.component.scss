@@ -1,0 +1,44 @@
+:host {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+
+    .content {
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 200;
+            letter-spacing: 13px;
+            color: var(--white);
+            text-transform: uppercase;
+        }
+        
+        .circle-01 {
+            position: absolute;
+            top: -60px;
+            left: 670px;
+            z-index: 0;
+        }
+        
+        .circle-02 {
+            position: absolute;
+            top: -10px;
+            left: 150px;
+            z-index: 1;
+        }
+        
+        .circle-03 {
+            position: absolute;
+            top: -60px;
+            left: 1170px;
+            z-index: 0;
+        }
+    }
+}

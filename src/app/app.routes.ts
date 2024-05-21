@@ -21,5 +21,9 @@ export const routes: Routes = [
     {
         path: 'contact',
         loadComponent: async () => (await import('./modules/portfolio/pages/contact/contact.component')).ContactComponent
+    },
+    {
+        path: 'soft-skills',
+        loadComponent: async () => (await import('./modules/portfolio/pages/soft-skills/soft-skills.component')).SoftSkillsComponent
     }
 ];
